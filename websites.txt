@@ -1,0 +1,2 @@
+NOAA Data: https://www.ngdc.noaa.gov/eog/viirs/download_dnb_composites.html
+NTL Tutorial: https://commercedataservice.github.io/tutorial_viirs_part1/
