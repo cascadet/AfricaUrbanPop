@@ -1,4 +1,4 @@
-setwd("/Users/cascade/Github/NightTimeLightsAfrica/data/raw/ipums/ghana-00-10")
+setwd("/Users/cascade/Github/NTL/data/raw/ipums/ghana-00-10")
 
 library(ipumsr)
 library(reshape2)
