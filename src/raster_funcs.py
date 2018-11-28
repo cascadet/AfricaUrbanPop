@@ -1,34 +1,18 @@
-import rasterio
-from skimage import measure
 import numpy as np
+import scipy.ndimage as ndimage
 
-mask1 = "./src/data/africa1k_2000_mask600.tif"
-mask2 = "./src/data/africa1k_2000_mask1000.tif"
-
-
-africa1k_600 = rasterio.open(mask1).read(1)
-
-africa1k_1000 = rasterio.open(mask2).read(1)
-
-
-def remove_isolated_pixels(mask1, mask2, noise_threshold=1, struct=2):
+def remove_isolated_pixels(mask1, mask2, struct=np.ones((3,3))):
     """
-    Unions two rbinary numpy arrays of the same shape.
+    Unions two binary numpy arrays of the same shape.
     Takes this unioned array and removes solitary pixels.
-    noise_threshold defines the grouping amount for pixels 
-    to be considered solitary and removed.
-    Can easily be adjusted to remove groups of pixels 
-    of size 2, 3, etc. See links for details
-    http://scikit-image.org/docs/dev/api/skimage.measure.html#skimage.measure.label
-    https://stackoverflow.com/questions/46143800/removing-isolated-pixels-using-opencv
+    Struct should be a binary 3x3 numpy array to define
+    connectivity rule. Binary mask arrays should be the 
+    shape.
     """
     union_arr = np.logical_or(mask1, mask2)*1
-    labeled = measure.label(union_arr,connectivity=struct)
-    for label_id in np.unique(labeled):
-        if (labeled == label_id).sum() == noise_threshold:
-            labeled[labeled == label_id] = 0
-    return labeled
-
-remove_isolated_pixels(africa1k_600, africa1k_1000)
-
+    id_regions, num_ids = ndimage.label(union_arr, structure=struct)
+    id_sizes = np.array(ndimage.sum(union_arr, id_regions, range(num_ids + 1)))
+    area_mask = (id_sizes == 1)
+    union_arr[area_mask[id_regions]] = 0
+    return union_arr
 
