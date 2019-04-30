@@ -17,45 +17,45 @@ urban_small = urban/1000
 rural_small = rural/1000
 df = data.frame(year, urban_small, rural_small)
 
-theme_black = function(base_size = 12, base_family = "") {
+theme_white = function(base_size = 12, base_family = "") {
   
   theme_grey(base_size = base_size, base_family = base_family) %+replace%
     
     theme(
       # Specify axis options
       axis.line = element_blank(),  
-      axis.text.x = element_text(size = base_size*0.8, color = "white", lineheight = 0.9),  
-      axis.text.y = element_text(size = base_size*0.8, color = "white", lineheight = 0.9),  
-      axis.ticks = element_line(color = "white", size  =  0.2),  
-      axis.title.x = element_text(size = base_size, color = "white", margin = margin(0, 10, 0, 0)),  
-      axis.title.y = element_text(size = base_size, color = "white", angle = 90, margin = margin(0, 10, 0, 0)),  
+      axis.text.x = element_text(size = base_size*0.8, color = "black", lineheight = 0.9),  
+      axis.text.y = element_text(size = base_size*0.8, color = "black", lineheight = 0.9),  
+      axis.ticks = element_line(color = "black", size  =  0.2),  
+      axis.title.x = element_text(size = base_size, color = "black", margin = margin(0, 10, 0, 0)),  
+      axis.title.y = element_text(size = base_size, color = "black", angle = 90, margin = margin(0, 10, 0, 0)),  
       axis.ticks.length = unit(0.3, "lines"),   
       # Specify legend options
-      legend.background = element_rect(color = NA, fill = "black"),  
-      legend.key = element_rect(color = "white",  fill = "black"),  
+      legend.background = element_rect(color = NA, fill = "white"),  
+      legend.key = element_rect(color = "black",  fill = "white"),  
       legend.key.size = unit(1.2, "lines"),  
       legend.key.height = NULL,  
       legend.key.width = NULL,      
-      legend.text = element_text(size = base_size*0.8, color = "white"),  
-      legend.title = element_text(size = base_size*0.8, face = "bold", hjust = 0, color = "white"),  
+      legend.text = element_text(size = base_size*0.8, color = "black"),  
+      legend.title = element_text(size = base_size*0.8, face = "bold", hjust = 0, color = "black"),  
       legend.position = "right",  
       legend.text.align = NULL,  
       legend.title.align = NULL,  
       legend.direction = "vertical",  
       legend.box = NULL, 
       # Specify panel options
-      panel.background = element_rect(fill = "black", color  =  NA),  
-      panel.border = element_rect(fill = NA, color = "white"),  
+      panel.background = element_rect(fill = "white", color  =  NA),  
+      panel.border = element_rect(fill = NA, color = "black"),  
       panel.grid.major = element_line(color = "grey35"),  
       panel.grid.minor = element_line(color = "grey20"),  
       panel.margin = unit(0.5, "lines"),   
       # Specify facetting options
       strip.background = element_rect(fill = "grey30", color = "grey10"),  
-      strip.text.x = element_text(size = base_size*0.8, color = "white"),  
-      strip.text.y = element_text(size = base_size*0.8, color = "white",angle = -90),  
+      strip.text.x = element_text(size = base_size*0.8, color = "black"),  
+      strip.text.y = element_text(size = base_size*0.8, color = "black",angle = -90),  
       # Specify plot options
-      plot.background = element_rect(color = "black", fill = "black"),  
-      plot.title = element_text(size = base_size*1.2, color = "white"),  
+      plot.background = element_rect(color = "white", fill = "white"),  
+      plot.title = element_text(size = base_size*1.2, color = "black"),  
       plot.margin = unit(rep(1, 4), "lines")
       
     )
@@ -65,11 +65,11 @@ theme_black = function(base_size = 12, base_family = "") {
 
 
 ggplot(df, aes(x=year, y=urban_small)) + 
-  geom_point(color='green', size = 3) + 
-  geom_point(data = df, aes(x=year, y=rural_small), color = 'blue', size = 3) +
-  theme_black() +
+  geom_point(color='purple', size = 3) + 
+  geom_point(data = df, aes(x=year, y=rural_small), color = 'pink', size = 3) +
+  theme_white() +
   labs(y='', x = '', title = '', caption = '') +
-  theme(axis.text=element_text(size=12, color = "black"), axis.title.x = element_text(size=12), axis.title.y = element_text(size=12)) 
+  theme(axis.text=element_text(size=12, color = "white"), axis.title.x = element_text(size=12), axis.title.y = element_text(size=12)) 
 
   
   
