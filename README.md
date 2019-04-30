@@ -1,7 +1,14 @@
-NightTimeLightsAfrica
+Pop-ERL
 ==============================
 
-NTL Analysis of SS Africa
+This repo contains the code and data for
+a submission to ERL on March 1, 2019.
+
+It is no longer used for population analysis and will be
+archived once we complete the ERL paper.
+
+-Cascade 04-07-19
+
 
 Project Organization
 ------------
