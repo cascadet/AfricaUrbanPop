@@ -1,4 +1,4 @@
-Pop-ERL
+AfricaUrbanPop
 ==============================
 
 This repo contains the code and final data for *Variability in urban population distributions across Africa* published in [Enivronmental Research Letters](https://iopscience.iop.org/article/10.1088/1748-9326/ab2432). The gridded population data needed to produce the final urban settlement polygons is available from PopGrid.org and Esri Inc. We use:
@@ -12,5 +12,5 @@ For the final data as shape and csv files, see ERL_Data directory in the repo an
 
 The code may be buggy as I am slowly cleaning it. I will add file structure and data explainers in the next few weeks. Please ping me with any questions.
 
--Cascade 2019-08-18
+Cascade 2019-08-18
 
