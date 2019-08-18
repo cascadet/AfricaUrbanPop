@@ -1,6 +1,0 @@
-# external requirements
-click
-pandas
-seaborn
-numpy
-

@@ -1,64 +1,16 @@
 Pop-ERL
 ==============================
 
-This repo contains the code and data for
-a submission to ERL on March 1, 2019.
+This repo contains the code and final data for *Variability in urban population distributions across Africa* published in [Enivronmental Research Letters](https://iopscience.iop.org/article/10.1088/1748-9326/ab2432). The gridded population data needed to produce the final urban settlement polygons is available from PopGrid.org and Esri Inc. We use:
 
-It is no longer used for population analysis and will be
-archived once we complete the ERL paper.
+-Global Human Settlment Layer Population Produce 2000 & 2015
+-WorldPop 2000 & 2015
+-ESRI Inc. Gridded Population of the World 2016
+-LandScan 2015
 
--Cascade 04-07-19
+For the final data as shape files, see XXX directory in the repo. 
 
+The code may be buggy as I am slowly cleaning it. I will add file structure and data explainers in the next few weeks. Please ping me with any questions.
 
-Project Organization
-------------
+-Cascade 2019-08-18
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
-
-
---------
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
