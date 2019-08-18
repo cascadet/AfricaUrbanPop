@@ -1,4 +1,3 @@
-READ ME
 Cascade Tuholske, 2019-08-18
 
 Files in this folder:
