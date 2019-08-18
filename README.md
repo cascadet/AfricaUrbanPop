@@ -8,7 +8,7 @@ This repo contains the code and final data for *Variability in urban population 
 -ESRI Inc. Gridded Population of the World 2016
 -LandScan 2015
 
-For the final data as shape files, see XXX directory in the repo. 
+For the final data as shape and csv files, see ERL_Data directory in the repo and the README.txt file included. Also included is the manually buffered Africa shape file to clip rasters.  
 
 The code may be buggy as I am slowly cleaning it. I will add file structure and data explainers in the next few weeks. Please ping me with any questions.
 
