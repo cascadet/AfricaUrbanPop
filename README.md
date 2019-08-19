@@ -10,7 +10,7 @@ This repo contains the code and final data for *Variability in urban population 
 
 The code is currently written in Jupyter Notebooks (Steps 1-6) located in the Notebook directory. Some of functions have been ported to the SRC directory as .py files (more will be soon). 
 
-The final urban population data used in our analysis (available as both shape and csv files) is in ERL_Data directory in the repo. Please the README.txt file included in that directory. Also included is the manually buffered Africa shape file we used to clip rasters.  
+**The final urban population data used in our analysis (available as both shape and csv files) is in ERL_Data directory in the repo.** Please see the README.txt file included in that directory for details. Also included is the manually buffered Africa shape file we used to clip rasters.  
 
 The code may be buggy, as I am in the processes of cleaning it. I will add file structure and data more explainers in the next few weeks. Please ping me with any questions.
 
