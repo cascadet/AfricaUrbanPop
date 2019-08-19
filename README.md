@@ -8,7 +8,7 @@ This repo contains the code and final data for *Variability in urban population 
 - ESRI Inc. Gridded Population of the World 2016
 - LandScan 2015
 
-The code is currently written in Jupyter Notebooks (Steps 1-6) located in the Notebook directory. Some of functions have been ported to the SRC directory as .py files (more will be soon). 
+The Python code is currently written in Jupyter Notebooks (Steps 1-6) located in the Notebook directory. Some of functions have been ported to the SRC directory as .py files (more will be soon). 
 
 **The final urban population data used in our analysis (available as both shape and csv files) is in ERL_Data directory in the repo.** Please see the README.txt file included in that directory for details. Also included is the manually buffered Africa shape file we used to clip rasters.  
 
