@@ -12,7 +12,7 @@ The code is currently written in Jupyter Notebooks (Steps 1-6) located in the No
 
 **The final urban population data used in our analysis (available as both shape and csv files) is in ERL_Data directory in the repo.** Please see the README.txt file included in that directory for details. Also included is the manually buffered Africa shape file we used to clip rasters.  
 
-The code may be buggy, as I am in the processes of cleaning it. I will add file structure and data more explainers in the next few weeks. Please ping me with any questions.
+The code may be buggy, as I am in the processes of cleaning it. I will be building out this repo in the next few weeks. Please ping me with any questions.
 
 Cascade 2019-08-18
 
