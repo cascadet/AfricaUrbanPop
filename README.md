@@ -14,5 +14,5 @@ The Python code is currently written in Jupyter Notebooks (Steps 1-6) located in
 
 The code may be buggy, as I am in the processes of building it into a more generalized Python package. I will be adding more to this repo in the coming months. Please ping me with any questions.
 
-Cascade 2019-08-18
+Cascade 2019-08-19
 
